@@ -1,0 +1,66 @@
+/* ==========================================================================
+   1. RESET Y ESTILOS GENERALES
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Permite calcular bordes y paddings dentro del tamaño del elemento */
+}
+
+body {
+    font-family: 'Outfit', 'Arial', sans-serif;
+    background-color: #083d33; /* Color de fondo de la página */
+    
+    /* ESTRUCTURA DE CENTRADO (FLEXBOX) */
+    display: flex;
+    justify-content: center; /* Centra la tarjeta horizontalmente */
+    align-items: center;     /* Centra la tarjeta verticalmente */
+    
+    min-height: 100vh;       /* Fuerza al body a ocupar todo el alto de la pantalla visible */
+    padding: 20px;           /* Colchón de seguridad para que la tarjeta no choque en celulares */
+}
+
+/* ==========================================================================
+   2. CONTENEDOR CENTRAL RESPONSIVO (CARD)
+   ========================================================================== */
+.card {
+    background-color: #ffffff;
+    
+    /* RESPONSIVIDAD */
+    width: 90%;             /* Ocupará el 90% de la pantalla en dispositivos móviles */
+    max-width: 600px;       /* En pantallas grandes, se detendrá y no medirá más de 600px */
+    
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); /* Sombra suave para dar profundidad */
+    padding: 40px;
+    text-align: center;      /* Centra los textos que pongas dentro por defecto */
+}
+/* Contenedor principal de la navegación */
+nav {
+  display: flex;
+  justify-content: flex-end; /* Alinea el contenido a la derecha */
+
+  padding: 10px 20px;
+}
+
+/* Lista de opciones */
+nav ul {
+  display: flex; /* Enlaza los elementos en una fila horizontal */
+  gap: 20px; /* Espaciado entre opciones */
+  list-style: none; /* Elimina los viñetas de la lista */
+  margin: 0;
+  padding: 0;
+}
+
+/* Enlaces */
+nav a {
+  color: #000;
+  text-decoration: none; /* Quita el subrayado */
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* Efecto hover */
+nav a:hover {
+  color: #00bcd4;
+}
